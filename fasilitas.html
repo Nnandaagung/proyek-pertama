@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas Kampus - Pondok Pesantren Askhabul Kahfi Semarang</title>
+    <meta name="description" content="Informasi Fasilitas Kampus di Pondok Pesantren Askhabul Kahfi Semarang.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300 py-3 bg-white shadow-md">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3 z-50 group">
+                    <div
+                        class="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center shadow-md overflow-hidden transition-transform group-hover:scale-105 border-2 border-emerald-600">
+                        <img src="https://ppaska.id/wp-content/uploads/2023/10/logo-aska.png"
+                            alt="Logo Ponpes Askhabul Kahfi" class="w-8 h-8 md:w-10 md:h-10 object-contain"
+                            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23059669\'><path d=\'M12 2L2 7l10 5 10-5-10-5zm0 10l-10-5v10l10 5 10-5V7l-10 5z\'/></svg>'">
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-display font-bold text-lg md:text-xl text-slate-800 transition-colors duration-300 tracking-wide nav-text">Askhabul
+                            Kahfi</span>
+                        <span
+                            class="text-xs text-slate-600 font-medium tracking-wider hidden sm:block nav-text">Semarang</span>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html"
+                        class="nav-link text-slate-600 font-medium hover:text-emerald-600 transition-colors">Beranda</a>
+                    <a href="profil.html"
+                        class="nav-link text-slate-600 font-medium hover:text-emerald-600 transition-colors">Profil</a>
+                    <a href="pendidikan.html"
+                        class="nav-link text-slate-600 font-medium hover:text-emerald-600 transition-colors">Pendidikan</a>
+                    <a href="fasilitas.html"
+                        class="nav-link text-emerald-600 font-bold border-b-2 border-emerald-600 pb-1 hover:text-emerald-700 transition-colors">Fasilitas</a>
+                    <a href="berita.html"
+                        class="nav-link text-slate-600 font-medium hover:text-emerald-600 transition-colors">Berita</a>
+
+                    <a href="https://ppaska.id/informasi-pendaftaran-2/" target="_blank"
+                        class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-[0_4px_14px_0_rgba(5,150,105,0.39)] hover:shadow-[0_6px_20px_rgba(5,150,105,0.23)] hover:-translate-y-0.5">
+                        Daftar
+                    </a>
+                </nav>
+
+                <button id="mobile-menu-btn" class="md:hidden text-slate-800 z-50 p-2 nav-text">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-emerald-900/95 backdrop-blur-md flex-col items-center justify-center gap-8 hidden opacity-0 transition-opacity duration-300">
+            <a href="index.html"
+                class="mobile-link text-white text-2xl font-medium hover:text-emerald-300 transition-colors">Beranda</a>
+            <a href="profil.html"
+                class="mobile-link text-white text-2xl font-medium hover:text-emerald-300 transition-colors">Profil</a>
+            <a href="pendidikan.html"
+                class="mobile-link text-white text-2xl font-medium hover:text-emerald-300 transition-colors">Pendidikan</a>
+            <a href="fasilitas.html"
+                class="mobile-link text-emerald-300 text-2xl font-bold transition-colors">Fasilitas</a>
+            <a href="berita.html"
+                class="mobile-link text-white text-2xl font-medium hover:text-emerald-300 transition-colors">Berita</a>
+
+            <a href="https://ppaska.id/informasi-pendaftaran-2/" target="_blank"
+                class="mt-4 bg-white text-emerald-700 px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:bg-emerald-50">
+                Pendaftaran
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-blue-900 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-950 to-blue-900"></div>
+        <div class="absolute inset-0 opacity-20"
+            style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=2000'); background-size: cover; background-position: center; mix-blend-mode: multiply;">
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in-up">
+                Fasilitas Kampus</h1>
+            <p class="text-blue-100 text-lg max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.1s;">
+                Lingkungan belajar yang asri, modern, dan representatif dengan pemisahan mutlak antara kampus putra dan
+                putri.</p>
+
+            <div class="flex items-center justify-center gap-2 mt-8 text-sm text-blue-200 animate-fade-in-up"
+                style="animation-delay: 0.2s;">
+                <a href="index.html" class="hover:text-white transition-colors">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-white">Fasilitas</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-6">
+
+            <!-- Intro text -->
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    Pondok Pesantren Askhabul Kahfi terus berupaya menyediakan fasilitas terbaik bagi para santrinya.
+                    Saat ini pesantren telah mendirikan 3 buah kampus (dan sedang membangun kampus keempat) dengan ruang
+                    kelas, asrama, dan fasilitas pendukung yang memadai untuk menunjang proses kegiatan belajar
+                    mengajar.
+                </p>
+            </div>
+
+            <!-- Kampus Putra -->
+            <div class="mb-20">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600">
+                        <i class="fa-solid fa-mars text-xl"></i>
+                    </div>
+                    <div>
+                        <h2
+                            class="font-display font-bold text-3xl text-slate-800 border-b-2 border-blue-500 pb-2 inline-block">
+                            Kampus Putra (Kampus 2)</h2>
+                        <p class="text-slate-500 mt-2">Pusat pendidikan santri putra dengan fasilitas vokasi terlengkap.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Facility Item -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=800"
+                                alt="Asrama Putra"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-5 border border-t-0 border-slate-100 rounded-b-2xl">
+                            <h3 class="font-bold text-slate-800 text-xl mb-2 flex items-center gap-2"><i
+                                    class="fa-solid fa-bed text-blue-500"></i> Asrama Santri</h3>
+                            <p class="text-slate-600 text-sm">Empat unit gedung lantai 4 dengan 50 unit kamar reguler
+                                yang nyaman dan representatif.</p>
+                        </div>
+                    </div>
+
+                    <!-- Facility Item -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=800"
+                                alt="Masjid Putra"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-5 border border-t-0 border-slate-100 rounded-b-2xl">
+                            <h3 class="font-bold text-slate-800 text-xl mb-2 flex items-center gap-2"><i
+                                    class="fa-solid fa-mosque text-blue-500"></i> Masjid Lantai 2</h3>
+                            <p class="text-slate-600 text-sm">Masjid luas dua lantai sebagai pusat ibadah dan kajian
+                                kitab kuning setiap harinya.</p>
+                        </div>
+                    </div>
+
+                    <!-- Facility Item -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+                        <div class="h-48 overflow-hidden bg-slate-100 flex items-center justify-center">
+                            <i class="fa-solid fa-car-side text-6xl text-slate-300"></i>
+                        </div>
+                        <div class="p-5 border border-t-0 border-slate-100 rounded-b-2xl">
+                            <h3 class="font-bold text-slate-800 text-xl mb-2 flex items-center gap-2"><i
+                                    class="fa-solid fa-wrench text-blue-500"></i> Lab Praktik SMK</h3>
+                            <p class="text-slate-600 text-sm">Laboratorium Otomotif (Mobil & Motor) serta Komputer (TKJ)
+                                yang disesuaikan dengan standar industri.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                    <div class="bg-blue-50 p-4 rounded-xl text-center border border-blue-100">
+                        <strong class="block text-2xl text-blue-700">35+</strong>
+                        <span class="text-xs text-blue-600 uppercase tracking-wide">Ruang Kelas</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-xl text-center border border-blue-100">
+                        <strong class="block text-2xl text-blue-700">10</strong>
+                        <span class="text-xs text-blue-600 uppercase tracking-wide">Kamar Khusus (Mahad Aly)</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-xl text-center border border-blue-100">
+                        <strong class="block text-2xl text-blue-700"><i
+                                class="fa-solid fa-wifi text-lg mb-1"></i></strong>
+                        <span class="text-xs text-blue-600 uppercase tracking-wide">Warnet & Smartel</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-xl text-center border border-blue-100">
+                        <strong class="block text-2xl text-blue-700"><i
+                                class="fa-solid fa-cart-shopping text-lg mb-1"></i></strong>
+                        <span class="text-xs text-blue-600 uppercase tracking-wide">Aska Mart & Kantin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-px bg-slate-200 my-16"></div>
+
+            <!-- Kampus Putri -->
+            <div class="mb-10">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600">
+                        <i class="fa-solid fa-venus text-xl"></i>
+                    </div>
+                    <div>
+                        <h2
+                            class="font-display font-bold text-3xl text-slate-800 border-b-2 border-pink-500 pb-2 inline-block">
+                            Kampus Putri (Kampus 3)</h2>
+                        <p class="text-slate-500 mt-2">Pusat pendidikan santri putri yang terjamin keamanan dan
+                            privasinya.</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Facility Item -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+                        <div class="h-48 overflow-hidden bg-slate-100 flex items-center justify-center">
+                            <i class="fa-solid fa-building text-6xl text-slate-300"></i>
+                        </div>
+                        <div class="p-5 border border-t-0 border-slate-100 rounded-b-2xl">
+                            <h3 class="font-bold text-slate-800 text-xl mb-2 flex items-center gap-2"><i
+                                    class="fa-solid fa-bed text-pink-500"></i> Gedung Asrama</h3>
+                            <p class="text-slate-600 text-sm">Tiga unit gedung berlantai 4 dengan kapasitas total (96
+                                kamar reguler) yang mampu menampung hingga 2.000 santri putri.</p>
+                        </div>
+                    </div>
+
+                    <!-- Facility Item -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+                        <div class="h-48 overflow-hidden bg-slate-100 flex items-center justify-center">
+                            <i class="fa-solid fa-scissors text-6xl text-slate-300"></i>
+                        </div>
+                        <div class="p-5 border border-t-0 border-slate-100 rounded-b-2xl">
+                            <h3 class="font-bold text-slate-800 text-xl mb-2 flex items-center gap-2"><i
+                                    class="fa-solid fa-shirt text-pink-500"></i> Lab Praktik SMK Putri</h3>
+                            <p class="text-slate-600 text-sm">Laboratorium khusus jurusan Tata Busana dan Tata Boga,
+                                lengkap dengan mesin jahit industri dan peralatan dapur modern.</p>
+                        </div>
+                    </div>
+
+                    <!-- Facility Item -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+                        <div class="h-48 overflow-hidden bg-slate-100 flex items-center justify-center">
+                            <i class="fa-solid fa-people-group text-6xl text-slate-300"></i>
+                        </div>
+                        <div class="p-5 border border-t-0 border-slate-100 rounded-b-2xl">
+                            <h3 class="font-bold text-slate-800 text-xl mb-2 flex items-center gap-2"><i
+                                    class="fa-solid fa-landmark text-pink-500"></i> Aula Utama</h3>
+                            <p class="text-slate-600 text-sm">Auditorium utama pesantren yang sangat sejuk dan digunakan
+                                untuk berbagai kegiatan besar dan peringatan hari besar Islam.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                    <div class="bg-pink-50 p-4 rounded-xl text-center border border-pink-100">
+                        <strong class="block text-2xl text-pink-700">35+</strong>
+                        <span class="text-xs text-pink-600 uppercase tracking-wide">Ruang Kelas Putri</span>
+                    </div>
+                    <div class="bg-pink-50 p-4 rounded-xl text-center border border-pink-100">
+                        <strong class="block text-2xl text-pink-700"><i
+                                class="fa-solid fa-hands-praying text-lg mb-1"></i></strong>
+                        <span class="text-xs text-pink-600 uppercase tracking-wide">Musholla 2 Lantai</span>
+                    </div>
+                    <div class="bg-pink-50 p-4 rounded-xl text-center border border-pink-100">
+                        <strong class="block text-2xl text-pink-700">40</strong>
+                        <span class="text-xs text-pink-600 uppercase tracking-wide">Unit KM/WC (Air Artesis)</span>
+                    </div>
+                    <div class="bg-pink-50 p-4 rounded-xl text-center border border-pink-100">
+                        <strong class="block text-2xl text-pink-700"><i
+                                class="fa-solid fa-shirt text-lg mb-1"></i></strong>
+                        <span class="text-xs text-pink-600 uppercase tracking-wide">Layanan Laundry Cuci Gosok</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer ... -->
+    <footer class="bg-slate-950 text-slate-300 pt-20 pb-10 border-t-4 border-emerald-600">
+        <div class="container mx-auto px-4 md:px-6">
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <p>&copy; 2026 Pondok Pesantren Askhabul Kahfi Semarang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                    colors: { emerald: { 600: '#059669' } }
+                }
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            let isMenuOpen = false;
+            mobileBtn.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    mobileMenu.classList.remove('hidden');
+                    setTimeout(() => { mobileMenu.classList.remove('opacity-0'); mobileBtn.innerHTML = '<i class="fa-solid fa-xmark text-2xl"></i>'; }, 10);
+                } else {
+                    mobileMenu.classList.add('opacity-0');
+                    mobileBtn.innerHTML = '<i class="fa-solid fa-bars text-2xl"></i>';
+                    setTimeout(() => { mobileMenu.classList.add('hidden'); }, 300);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

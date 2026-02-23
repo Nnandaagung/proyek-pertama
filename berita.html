@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabar & Berita - Pondok Pesantren Askhabul Kahfi Semarang</title>
+    <meta name="description" content="Informasi dan Berita Terbaru Seputar Pondok Pesantren Askhabul Kahfi Semarang.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300 py-3 bg-white shadow-md">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3 z-50 group">
+                    <div
+                        class="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center shadow-md overflow-hidden transition-transform group-hover:scale-105 border-2 border-emerald-600">
+                        <img src="https://ppaska.id/wp-content/uploads/2023/10/logo-aska.png"
+                            alt="Logo Ponpes Askhabul Kahfi" class="w-8 h-8 md:w-10 md:h-10 object-contain"
+                            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23059669\'><path d=\'M12 2L2 7l10 5 10-5-10-5zm0 10l-10-5v10l10 5 10-5V7l-10 5z\'/></svg>'">
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-display font-bold text-lg md:text-xl text-slate-800 transition-colors duration-300 tracking-wide nav-text">Askhabul
+                            Kahfi</span>
+                        <span
+                            class="text-xs text-slate-600 font-medium tracking-wider hidden sm:block nav-text">Semarang</span>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html"
+                        class="nav-link text-slate-600 font-medium hover:text-emerald-600 transition-colors">Beranda</a>
+                    <a href="profil.html"
+                        class="nav-link text-slate-600 font-medium hover:text-emerald-600 transition-colors">Profil</a>
+                    <a href="pendidikan.html"
+                        class="nav-link text-slate-600 font-medium hover:text-emerald-600 transition-colors">Pendidikan</a>
+                    <a href="fasilitas.html"
+                        class="nav-link text-slate-600 font-medium hover:text-emerald-600 transition-colors">Fasilitas</a>
+                    <a href="berita.html"
+                        class="nav-link text-emerald-600 font-bold border-b-2 border-emerald-600 pb-1 hover:text-emerald-700 transition-colors">Berita</a>
+
+                    <a href="https://ppaska.id/informasi-pendaftaran-2/" target="_blank"
+                        class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-[0_4px_14px_0_rgba(5,150,105,0.39)] hover:shadow-[0_6px_20px_rgba(5,150,105,0.23)] hover:-translate-y-0.5">
+                        Daftar
+                    </a>
+                </nav>
+
+                <button id="mobile-menu-btn" class="md:hidden text-slate-800 z-50 p-2 nav-text">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-emerald-900/95 backdrop-blur-md flex-col items-center justify-center gap-8 hidden opacity-0 transition-opacity duration-300">
+            <a href="index.html"
+                class="mobile-link text-white text-2xl font-medium hover:text-emerald-300 transition-colors">Beranda</a>
+            <a href="profil.html"
+                class="mobile-link text-white text-2xl font-medium hover:text-emerald-300 transition-colors">Profil</a>
+            <a href="pendidikan.html"
+                class="mobile-link text-white text-2xl font-medium hover:text-emerald-300 transition-colors">Pendidikan</a>
+            <a href="fasilitas.html"
+                class="mobile-link text-white text-2xl font-medium hover:text-emerald-300 transition-colors">Fasilitas</a>
+            <a href="berita.html" class="mobile-link text-emerald-300 text-2xl font-bold transition-colors">Berita</a>
+
+            <a href="https://ppaska.id/informasi-pendaftaran-2/" target="_blank"
+                class="mt-4 bg-white text-emerald-700 px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:bg-emerald-50">
+                Pendaftaran
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-slate-900 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 to-slate-900"></div>
+        <div class="absolute inset-0 opacity-20"
+            style="background-image: url('https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&q=80&w=2000'); background-size: cover; background-position: center; mix-blend-mode: multiply;">
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in-up">Kabar
+                Pesantren</h1>
+            <p class="text-slate-300 text-lg max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.1s;">
+                Informasi kegiatan, prestasi santri, artikel islami, dan pengumuman resmi Pondok Pesantren Askhabul
+                Kahfi.</p>
+
+            <div class="flex items-center justify-center gap-2 mt-8 text-sm text-slate-400 animate-fade-in-up"
+                style="animation-delay: 0.2s;">
+                <a href="index.html" class="hover:text-white transition-colors">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-white">Berita</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-6">
+
+            <!-- Category Filter / Badges -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <a href="#" class="px-5 py-2 rounded-full bg-emerald-600 text-white font-medium text-sm shadow-md">Semua
+                    Berita</a>
+                <a href="#"
+                    class="px-5 py-2 rounded-full bg-white text-slate-600 font-medium text-sm border border-slate-200 hover:bg-emerald-50 hover:text-emerald-600 transition-colors">Prestasi</a>
+                <a href="#"
+                    class="px-5 py-2 rounded-full bg-white text-slate-600 font-medium text-sm border border-slate-200 hover:bg-emerald-50 hover:text-emerald-600 transition-colors">Artikel
+                    Islami</a>
+                <a href="#"
+                    class="px-5 py-2 rounded-full bg-white text-slate-600 font-medium text-sm border border-slate-200 hover:bg-emerald-50 hover:text-emerald-600 transition-colors">Kegiatan
+                    Santri</a>
+                <a href="#"
+                    class="px-5 py-2 rounded-full bg-white text-slate-600 font-medium text-sm border border-slate-200 hover:bg-emerald-50 hover:text-emerald-600 transition-colors">Pengumuman</a>
+            </div>
+
+            <!-- Featured News (Latest/Imported from ppaska.id) -->
+            <div class="grid lg:grid-cols-2 gap-8 mb-16">
+
+                <!-- Main Featured Post -->
+                <article class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 group relative">
+                    <div class="relative h-[300px] md:h-[400px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&q=80&w=1000"
+                            alt="Halaqah TQM"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full z-10 shadow-md">
+                            Berita Utama</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent">
+                        </div>
+
+                        <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-20">
+                            <div class="flex items-center gap-3 text-emerald-300 text-sm mb-3">
+                                <span><i class="fa-regular fa-calendar mr-1"></i> 15 Okt 2023</span>
+                                <span>•</span>
+                                <span><i class="fa-regular fa-folder-open mr-1"></i> Kegiatan</span>
+                            </div>
+                            <h2
+                                class="font-display font-bold text-2xl md:text-3xl text-white mb-3 group-hover:text-emerald-300 transition-colors">
+                                <a href="https://ppaska.id/8646/halaqah-tqm-jawa-tengah-tekankan-strategi-penguatan-mutu/"
+                                    class="before:absolute before:inset-0">Halaqah TQM Jawa Tengah Tekankan Strategi
+                                    Penguatan Mutu Pesantren di Era Digital</a>
+                            </h2>
+                            <p class="text-slate-300 text-sm md:text-base line-clamp-2">Pondok Pesantren Askhabul Kahfi
+                                menjadi tuan rumah bagi Halaqah Total Quality Management (TQM) se-Jawa Tengah untuk
+                                meningkatkan mutu pendidikan pesantren.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Secondary Featured Posts -->
+                <div class="flex flex-col gap-6">
+
+                    <article
+                        class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 group flex flex-col sm:flex-row h-full">
+                        <div class="sm:w-2/5 h-48 sm:h-auto overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800"
+                                alt="Wisuda Mahad Aly"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="sm:w-3/5 p-6 flex flex-col justify-center">
+                            <div class="text-xs text-slate-500 mb-2 flex items-center gap-3">
+                                <span class="text-emerald-600 font-semibold">Akademik</span>
+                                <span>12 Sep 2023</span>
+                            </div>
+                            <h3
+                                class="font-display font-bold text-xl text-slate-800 mb-2 group-hover:text-emerald-600 transition-colors">
+                                <a href="https://ppaska.id/8585/wisuda-ke-3-mahad-aly/"
+                                    class="before:absolute before:inset-0">Wisuda ke-3 Ma’had Aly Askhabul Kahfi, Cetak
+                                    Sarjana Tafsir Berbasis Kitab Kuning</a>
+                            </h3>
+                            <p class="text-slate-600 text-sm line-clamp-2">Ma'had Aly Askhabul Kahfi sukses menggelar
+                                wisuda ke-3 bagi puluhan mahasantri program studi Ilmu Tafsir.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 group flex flex-col sm:flex-row h-full">
+                        <div class="sm:w-2/5 h-48 sm:h-auto overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=800"
+                                alt="Visitasi Kemenag"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="sm:w-3/5 p-6 flex flex-col justify-center">
+                            <div class="text-xs text-slate-500 mb-2 flex items-center gap-3">
+                                <span class="text-emerald-600 font-semibold">Kelembagaan</span>
+                                <span>05 Sep 2023</span>
+                            </div>
+                            <h3
+                                class="font-display font-bold text-xl text-slate-800 mb-2 group-hover:text-emerald-600 transition-colors">
+                                <a href="https://ppaska.id/8629/kemenag-pusat-lakukan-visitasi-pendirian-pendidikan-diniyah-formal/"
+                                    class="before:absolute before:inset-0">Kemenag Pusat Lakukan Visitasi Pendirian
+                                    Pendidikan Diniyah Formal di Ponpes</a>
+                            </h3>
+                            <p class="text-slate-600 text-sm line-clamp-2">Tim dari Kementerian Agama Pusat melakukan
+                                visitasi ke kampus Askhabul Kahfi dalam rangka pengkajian izin Pendidikan Diniyah
+                                Formal.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- News Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+                <!-- News Item -->
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all group flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1546422904-90eab23c3d7e?auto=format&fit=crop&q=80&w=800"
+                            alt="Satria Award"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center justify-between mb-3 text-sm">
+                            <span
+                                class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-semibold">Prestasi</span>
+                            <span class="text-slate-500">20 Agu 2023</span>
+                        </div>
+                        <h3
+                            class="font-display font-bold text-xl text-slate-800 mb-3 group-hover:text-emerald-600 transition-colors">
+                            <a href="https://ppaska.id/8574/satria-education-award-dari-suara-merdeka/">Ponpes Askhabul
+                                Kahfi Semarang Raih Satria Education Award dari Suara Merdeka</a>
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Penghargaan prestisius di bidang pendidikan
+                            berhasil diraih oleh Pondok Pesantren Askhabul Kahfi atas dedikasinya.</p>
+                        <a href="https://ppaska.id/8574/satria-education-award-dari-suara-merdeka/"
+                            class="mt-auto text-emerald-600 font-semibold text-sm hover:text-emerald-700 flex items-center gap-1">Baca
+                            Selengkapnya <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Item -->
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all group flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800"
+                            alt="Program Abu Nawas"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center justify-between mb-3 text-sm">
+                            <span
+                                class="bg-teal-50 text-teal-600 px-3 py-1 rounded-full text-xs font-semibold">Kesehatan</span>
+                            <span class="text-slate-500">10 Agu 2023</span>
+                        </div>
+                        <h3
+                            class="font-display font-bold text-xl text-slate-800 mb-3 group-hover:text-emerald-600 transition-colors">
+                            <a
+                                href="https://ppaska.id/8506/program-abu-nawas-dorong-pesantren-mandiri-dan-berwawasan-sehat/">Program
+                                Abu Nawas: Dorong Pesantren Mandiri dan Berwawasan Sehat</a>
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Peluncuran program kesehatan internal
+                            pesantren guna memastikan seluruh santri mendapatkan pola hidup sehat dan bersih.</p>
+                        <a href="https://ppaska.id/8506/program-abu-nawas-dorong-pesantren-mandiri-dan-berwawasan-sehat/"
+                            class="mt-auto text-emerald-600 font-semibold text-sm hover:text-emerald-700 flex items-center gap-1">Baca
+                            Selengkapnya <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Item -->
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all group flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <!-- Kirab Hari Santri -->
+                        <img src="https://images.unsplash.com/photo-1601662528567-526cd06f6582?auto=format&fit=crop&q=80&w=800"
+                            alt="Hari Santri"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center justify-between mb-3 text-sm">
+                            <span
+                                class="bg-orange-50 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Kegiatan</span>
+                            <span class="text-slate-500">22 Okt 2023</span>
+                        </div>
+                        <h3
+                            class="font-display font-bold text-xl text-slate-800 mb-3 group-hover:text-emerald-600 transition-colors">
+                            <a href="https://ppaska.id/8527/kirab-kebangsaan-hari-santri-2025/">Kirab Kebangsaan
+                                Peringatan Hari Santri Nasional Ribuan Santri</a>
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Lebih dari 3.000 santri Askhabul Kahfi turun
+                            ke jalan menggelar kirab budaya dalam rangka menyemarakkan Hari Santri Nasional.</p>
+                        <a href="https://ppaska.id/8527/kirab-kebangsaan-hari-santri-2025/"
+                            class="mt-auto text-emerald-600 font-semibold text-sm hover:text-emerald-700 flex items-center gap-1">Baca
+                            Selengkapnya <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+
+                <!-- Artikel Item -->
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all group flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1594322436404-5a0526db4d13?auto=format&fit=crop&q=80&w=800"
+                            alt="Tafsir"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center justify-between mb-3 text-sm">
+                            <span
+                                class="bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-xs font-semibold">Artikel
+                                Islami</span>
+                            <span class="text-slate-500">Kajian Tafsir</span>
+                        </div>
+                        <h3
+                            class="font-display font-bold text-xl text-slate-800 mb-3 group-hover:text-emerald-600 transition-colors">
+                            <a
+                                href="https://ppaska.id/7837/tanda-tanda-orang-yang-bertaqwa-tafsir-surah-al-baqoroh-ayat-1-5/">Tanda
+                                Tanda Orang yang Bertaqwa | Tafsir Surah Al Baqoroh ayat 1–5</a>
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Oleh: KH. Masruchan Bisri. Penjelasan
+                            komprehensif mengenai ciri-ciri orang yang Muttaqin berdasar kitab suci Al-Quran.</p>
+                        <a href="https://ppaska.id/7837/tanda-tanda-orang-yang-bertaqwa-tafsir-surah-al-baqoroh-ayat-1-5/"
+                            class="mt-auto text-emerald-600 font-semibold text-sm hover:text-emerald-700 flex items-center gap-1">Baca
+                            Selengkapnya <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all group flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&q=80&w=800"
+                            alt="Hadits"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center justify-between mb-3 text-sm">
+                            <span
+                                class="bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-xs font-semibold">Artikel
+                                Islami</span>
+                            <span class="text-slate-500">Renungan</span>
+                        </div>
+                        <h3
+                            class="font-display font-bold text-xl text-slate-800 mb-3 group-hover:text-emerald-600 transition-colors">
+                            <a href="https://ppaska.id/7898/renungan-hadits-dan-maqolah/">Renungan Hadits dan Maqolah
+                                Imam Ghozali</a>
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Kajian ringkas untuk menjaga kebersihan hati
+                            dan memperbaiki niat dalam setiap aktivitas ibadah dan muamalah harian.</p>
+                        <a href="https://ppaska.id/7898/renungan-hadits-dan-maqolah/"
+                            class="mt-auto text-emerald-600 font-semibold text-sm hover:text-emerald-700 flex items-center gap-1">Baca
+                            Selengkapnya <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+
+                <article
+                    class="bg-white rounded-2xl p-8 flex flex-col items-center justify-center text-center border-2 border-dashed border-emerald-200">
+                    <div
+                        class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-slate-800 mb-2">Baca Lebih Banyak</h3>
+                    <p class="text-slate-600 text-sm mb-6">Kunjungi arsip berita dan tulisan ilmiah karya
+                        ustaz/ustadzah. </p>
+                    <a href="https://ppaska.id/berita"
+                        class="px-6 py-2.5 bg-slate-800 hover:bg-slate-900 text-white rounded-full font-medium transition-colors text-sm">
+                        Muat Lebih Banyak
+                    </a>
+                </article>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer ... -->
+    <footer class="bg-slate-950 text-slate-300 pt-20 pb-10 border-t-4 border-emerald-600">
+        <div class="container mx-auto px-4 md:px-6">
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <p>&copy; 2026 Pondok Pesantren Askhabul Kahfi Semarang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                    colors: { emerald: { 600: '#059669' } }
+                }
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            let isMenuOpen = false;
+            mobileBtn.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    mobileMenu.classList.remove('hidden');
+                    setTimeout(() => { mobileMenu.classList.remove('opacity-0'); mobileBtn.innerHTML = '<i class="fa-solid fa-xmark text-2xl"></i>'; }, 10);
+                } else {
+                    mobileMenu.classList.add('opacity-0');
+                    mobileBtn.innerHTML = '<i class="fa-solid fa-bars text-2xl"></i>';
+                    setTimeout(() => { mobileMenu.classList.add('hidden'); }, 300);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
